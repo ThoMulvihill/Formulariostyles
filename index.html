@@ -7,138 +7,46 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Reserva Tu Mesa</a></li>
+                <li><a href="#cont">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
 
-   <div>
-     <h1>Reservas: A la leña.</h1>
-     <p id="1">Completa todos los campos para realizar una reserva en parrilla "A la leña".</p>
+    <div>
+        <div>
+            <p name="parrilla">Restaurant - Parrilla - Vinos</p>
+        </div>
 
-        <form action="#" method="POST" id="registroForm">
-        
-        <fieldset>
-            <legend>Datos personales</legend>
+        <div>
+            <H1 name="titulo">Parrilla A la Leña</H1>
+        </div>
 
-            <div>
-                <label for="nombre">Nombre y Apellido:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Escribe aqui..." required>
-            </div>
-            
-            <div>
-                <label for="tel">Teléfono:</label>
-                <input type="number" name="tel" id="tel" placeholder="Ej: 11 1234-5678" maxlength="12" required>
-            </div>
+        <div>
 
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Ej: name@mail.com" required>
-            </div>
-        </fieldset>
-
-        <fieldset>
-            <legend>Detalles de reserva</legend>
-
-            <div>
-                <label for="dni">Cantidad de personas:</label>
-                <input type="number" id="personas" name="personas" min="1" max="20" placeholder="Escribe aqui..." required>
-            </div>
-
-            <div>
-                <label for="reserva">Fecha de reserva:</label>
-                <input type="date" id="reserva" name="reserva" placeholder="Escribe aqui..." required>
-            </div>
-
-            <div>
-                <label for="horario">Horario de reserva: </label>
-                <input type="time" id="horario" name="horario" min="12:00" max="23:30" step="1800" required>
-            </div>
-
-            <div>
-                <label for="turno" >Espacio seleccionado:</label>
-                <label>
-                    <input type="radio" name="espacio" value="adentro" class="checkbox-input">
-                    Zona interior
-                </label>
-
-                <label>
-                    <input type="radio" name="espacio" value="terraza"class="checkbox-input">
-                    Terraza
-                </label>
-
-                <label>
-                    <input type="radio" name="espacio" value="patio"class="checkbox-input">
-                    Patio
-                </label>
-            </div>
-
-            <div>
-                <label for="Sucursales">Sucursal elegida:</label>
-                <div>
-                    <label>
-                        <input type="checkbox" name="sucursal" value="Palermo1">
-                        Palermo 1
-                    </label>
-                        
-                    <label>
-                        <input type="checkbox" name="sucursal" value="Palermo2">
-                        Palermo 2
-                    </label>
-
-                    <label>
-                        <input type="checkbox" name="sucursal" value="Caballito">
-                        Caballito
-                    </label>
-                        
-                    <label>
-                        <input type="checkbox" name="sucursal" value="Belgrano">
-                        Belgrano
-                    </label>
-                    
-                </div>
-            </div>
-
-            <div>
-                <label for="pago">Método de pago:</label>
-                <select name="pago" id="pago" required>
-                    <option value="">Selecciona el método de pago</option>
-                    <option value="MT">Efectivo</option>
-                    <option value="DÑ">Tarjeta de crédito</option>
-                    <option value="AR">Tarjeta de débito</option>
-                    <option value="PR">Tarjeta virtual</option>
-                    <option value="LL">Criptomonedas</option></select>
-            </div>
-
-            <div>
-                <label for="motivo">Aclaraciones alimenticias:</label>
-                <textarea name="comentarios" id="comentarios" rows="4" placeholder="Escribe aqui..."></textarea>
-            </div>
-        </fieldset>
-
-        <fieldset>
-            <legend>Seguridad</legend>
-
-            <label for="password">Contraseña para identificación:</label>
-            <input type="password" name="password" id="password" placeholder="Mínimo 8 caracteres" minlength="8"  required>
-
-            <div>
-                <label for="confirmPassword">Confirmar contraseña:</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Repite tu contraseña" minlength="8" required>
-            </div>
-        </fieldset>
-
-            <div>
-                <label>
-                    <input type="checkbox" name="termycond" required>
-                    Acepto los <a href="#">términos y condiciones</a> *
-                </label>
-            </div>
-
-            <div>
-                <button type="submit">Confirmar reserva</button>
-                <button type="reset">Limpiar formulario</button>
-            </div>
-    </div>  
-    </form>
+        </div>
+    </div>
 </body>
-</html>
+<footer>
+    <div>
+        <h3>Ubicaciones</h3>
+        <ul>
+            <li>Belgrano</li>
+            <li>Caballito</li>
+            <li>Palermo 1</li>
+            <li>Palermo 2</li>
+        </ul>
+    </div>
 
-
-<!-- Este formulario fue hecho por Thomas Mulvihill :) -->
+    <div id="cont">
+        <h3>Contacto</h3>
+        <ul>
+            <li>11 2434-5678</li>
+            <li>alaleña.parrilla@gmail.com</li>
+        </ul>
+    </div>
+</footer>
