@@ -24,10 +24,35 @@ h1,h2 {
         font-size: 2.4rem;
 }
 
-h1 + p {
+.encabezados-form + p {
     color: var(--color-texto);
     margin-bottom: 2rem;
     font-size: 1.2rem;
+}
+
+.encabezados-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.boton-volver {
+    background: var(--color-primario);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.boton-volver:hover {
+    background: var(--color-acento);
+    transform: translateY(-2px);
 }
 
 .imagen-banner{
@@ -66,7 +91,7 @@ body > div:hover {
 
 input::placeholder,
 textarea::placeholder {
-    color: lightgray;
+    color: #8a8178;
     font-style: italic;
 }
 
@@ -303,7 +328,7 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(186, 165, 99, 0.35);
+    box-shadow: 0 6px 20px rgba(186,165,99, 0.35);
 }
 
 button[type="submit"]:active {
@@ -339,3 +364,5 @@ label:has(+ select[required])::after {
     color: #ef4444;
     font-weight: 700;
 }
+
+@media (max-width: 900px)

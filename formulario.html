@@ -10,8 +10,11 @@
     <img class="imagen-banner" src="img/lugar.jpg" alt=" ">
 
    <div>
-     <h1>Reservas: A la leña.</h1>
-     <p id="1">Completa todos los campos para realizar una reserva en parrilla "A la leña".</p>
+        <div class="encabezados-form">
+        <h1>Reservas: A la leña.</h1>
+        <a href="index.html" class="boton-volver">← Volver al inicio</a>
+        <p id="1">Completa todos los campos para realizar una reserva en parrilla "A la leña".</p>
+        </div>
 
         <form action="#" method="POST" id="registroForm">
         
@@ -38,7 +41,7 @@
             <legend>Detalles de reserva</legend>
 
             <div>
-                <label for="dni">Cantidad de personas:</label>
+                <label for="personas">Cantidad de personas:</label>
                 <input type="number" id="personas" name="personas" min="1" max="20" placeholder="Escribe aqui..." required>
             </div>
 
@@ -53,7 +56,7 @@
             </div>
 
             <div>
-                <label for="turno" >Espacio seleccionado:</label>
+                <label for="espacio" >Espacio seleccionado:</label>
                 <label>
                     <input type="radio" name="espacio" value="adentro" class="checkbox-input">
                     Zona interior
@@ -71,7 +74,7 @@
             </div>
 
             <div>
-                <label for="Sucursales">Sucursal elegida:</label>
+                <label for="sucursal">Sucursal elegida:</label>
                 <div>
                     <label>
                         <input type="checkbox" name="sucursal" value="Palermo1">
@@ -136,8 +139,8 @@
                 <button type="submit">Confirmar reserva</button>
                 <button type="reset">Limpiar formulario</button>
             </div>
-    </div>  
     </form>
+    </div>
 </body>
 </html>
 
